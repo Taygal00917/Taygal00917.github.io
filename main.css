@@ -1,0 +1,17 @@
+h1, h2, h3{
+    text-align: center;
+}
+
+.image-container > img{
+    width:100%;
+    height: auto;
+}
+
+#titleImage > img{
+    width:200px!important;
+}
+
+.reference{
+    border-left: 2px solid black;
+    padding-left: 1em!important;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="icon" href="pepe.png"/> -->
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/adc1711e54.js" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Latest dev vue -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <title></title>
+    </head>
+    <body class="bg-light">
+        <div id="app" class="container">
+            <div class="title-header p-5 border-bottom">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="row mt-5">
+                <div class="col border pt-3 pb-3 shadow">
+                    <div id="titleImage" class="image-container mb-4">
+                        <img v-bind:src="titleImage.src" alt="">
+                    </div>
+                    <ul v-for="item in info">
+                        <li>{{item}}</li>
+                    </ul>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div id="title">
+                <div class="image-container border mt-5 shadow">
+                    <img v-bind:src="i1.src" alt="">
+                    <p class="text-center pt-2">
+                        <strong>Description:</strong> {{i1.desc}}
+                        <br> <strong>Source:</strong> {{i1.ref}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="section mt-5">
+                <div class="section-header border-bottom p-3">
+                    <h2>{{head1}}</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <p>{{p1}}</p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container border shadow">
+                            <img v-bind:src="i2.src" alt="">
+                            <p class="text-center pt-2">
+                                <strong>Description:</strong> {{i2.desc}}
+                                <br> <strong>Source:</strong> {{i2.ref}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section mt-5">
+                <div class="section-header border-bottom p-3">
+                    <h2>{{head2}}</h2>
+                    
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <p>{{p2}}</p>
+                    </div>
+                    <div class="col">
+                        <h3>{{head3}}</h3>
+                        <div class="image-container border shadow">
+                            <img v-bind:src="i3.src" alt="">
+                            <p class="text-center pt-2">
+                                <strong>Description:</strong> {{i3.desc}}
+                                <br> <strong>Source:</strong> {{i3.ref}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="section mt-5">
+                <div class="section-header border-bottom p-3">
+                    <h2>{{head4}}</h2>
+                </div>
+                <div class="row mt-5">
+                
+                    <div class="col">
+                        <p>{{p3}}</p>
+                    </div>
+                    <div class="col">
+                        <p>{{p4}}</p>
+                        <div class="image-container border shadow">
+                            <img v-bind:src="i4.src" alt="">
+                            <p class="text-center pt-2">
+                                <strong>Description:</strong> {{i4.desc}}
+                                <br> <strong>Source:</strong> {{i4.ref}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section mt-5">
+                <div class="section-header border-bottom p-3">
+                    <h2>{{head5}}</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <p>{{p5}}</p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container border shadow">
+                            <img v-bind:src="i5.src" alt="">
+                            <p class="text-center pt-2">
+                                <strong>Description:</strong> {{i5.desc}}
+                                <br> <strong>Source:</strong> {{i5.ref}}
+                            </p>
+                        </div>
+                        <p>{{p6}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section m-5">
+                <div class="section-header border-bottom p-3">
+                    <h2>References</h2>
+                </div>
+                <ul v-for="ref in references">
+                    <li class="row reference mt-4">
+                        {{ref}}
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+        <link rel="stylesheet" href="main.css"/>
+        <script type="text/javascript" src="vueControllers.js"></script>
+    </body>
+</html>
